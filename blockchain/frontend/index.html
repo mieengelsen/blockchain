@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blockchain</title>
+        <script src="jsonview.js"></script>
+        <script src="endpoint-user.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    </body>
+    <script>
+        useEndpoint('GET', '/api/address/active/ETH');
+        useEndpoint('GET', '/api/address/active/LINK');
+        useEndpoint('GET', '/api/address/active/USDC');
+        useEndpoint('GET', '/api/transfer/04aa'); 
+        useEndpoint('GET', '/api/transactions/04aa');
+        
+
+    </script>
+</html>
