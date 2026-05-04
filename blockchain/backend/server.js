@@ -23,7 +23,7 @@ async function onGetActiveAddresses(request, response) {
             or a.address_id = receiver_address_id
         join currency c using (currency_id) 
         where c.symbol = $1`, 
-        [symbol]);
+        [symbol]); 
     response.json(dbresult.rows);
 }
 
